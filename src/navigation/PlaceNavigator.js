@@ -30,10 +30,10 @@ const PlaceNavigator = () => {
         }}
     >
         <PlaceStack.Screen
-          name="Catálogo"
+          name="Direcciones"
           component={PlaceListScreen}
           options={({ navigation }) => ({
-            title: "CATÁLOGO",
+            title: "Direcciones",
             headerRight: () => (
               <TouchableOpacity onPress={() => navigation.navigate("Nuevo")}>
                 <Ionicons
@@ -50,12 +50,12 @@ const PlaceNavigator = () => {
         <PlaceStack.Screen
           name="Detalle"
           component={PlaceDetailScreen}
-          options={{ title: "Detalle dirección" }}
+          options={{ title: "Detalle direccion" }}
         />
         <PlaceStack.Screen
           name="Nuevo"
           component={NewPlaceScreen}
-          options={{ title: "ENVÍOS" }}
+          options={{ title: "Nueva direccion" }}
         />
         <PlaceStack.Screen
           name="Map"

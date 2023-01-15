@@ -60,8 +60,8 @@ export default BottomTabNavigator = () => {
         options={{
           tabBarIcon: ({ focus }) => (
             <View style={styles.item}>
-              <Ionicons name="square" size={20} color="black" />
-              <Text>Map</Text>
+              <Ionicons name="compass" size={20} color="black" />
+              <Text>Mapa</Text>
             </View>
           ),
         }}

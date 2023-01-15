@@ -13,14 +13,14 @@ const NewPlaceScreen = ({ navigation, route }) => {
   const [location, setLocation] = useState();
 
   useEffect(() => {
-    console.log(route, "ENVÍOS");
+    console.log(route, "Nueva Direccion");
   }, [route]);
 
   const handleTitleChange = (text) => setTitle(text);
 
   const handleSave = () => {
     dispatch(addPlace(title, image, location));
-    navigation.navigate("Catálogo");
+    navigation.navigate("Direcciones");
   };
 
   return (
@@ -38,7 +38,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
           mapLocation={route?.params?.mapLocation}
         />
         <Button
-          title="Enviar mi dirección"
+          title="Enviar mi ubicación"
           color={COLORS.MAROON}
           onPress={handleSave}
         />
@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 18,
-    marginBottom: 16,
+    marginBottom: -20,
+    marginTop: 30,
   },
   input: {
     borderBottomColor: "#ccc",
