@@ -46,7 +46,7 @@ const MapScreen = ({ navigation }) => {
     >
       {selectedLocation && (
         <Marker
-          title="Ubicación seleccionada"
+          title="Ubicacion seleccionada"
           coordinate={{
             latitude: selectedLocation.lat,
             longitude: selectedLocation.lng,

@@ -20,13 +20,21 @@ export default (state = initialState, action) => {
         ...state,
         places: state.places.concat(newPlace),
       };
-      case LOAD_PLACES:
-        return{
-          ...state,
-          places: action.places.map(
-            (item) => new Place (item.id.toString(), item.title, tiel.image, item.address, item.lat, item.lng)
-          )
-        }
+    case LOAD_PLACES:
+      return {
+        ...state,
+        places: action.places.map(
+          (item) =>
+            new Place(
+              item.id.toString(),
+              item.title,
+              item.image,
+              item.address,
+              item.lat,
+              item.lng
+            )
+        ),
+      };
     default:
       return state;
   }
