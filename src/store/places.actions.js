@@ -12,7 +12,7 @@ export const addPlace = (title, image, location) => {
     );
 
     if (!response.ok)
-      throw new Error("No se ha podido comunicar con Google Mas API");
+      throw new Error("No se ha podido comunicar con Google Maps API");
 
     const resData = await response.json();
 

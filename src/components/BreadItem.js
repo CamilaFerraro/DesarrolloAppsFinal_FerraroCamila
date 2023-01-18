@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     padding: 20,
     margin: 10,
     borderRadius: 3,
-    backgroundColor: "#ccc",
+    backgroundColor: "#c77dff",
   },
   title: {
     fontSize: 20,

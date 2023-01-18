@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {View, Text, StyleSheet, Button, TextInput, ScrollView} from "react-native";
+import {View,Text, StyleSheet, Button, TextInput, ScrollView} from "react-native";
 import { COLORS } from "../constants";
 import { addPlace } from "../store/places.actions";
 import { useDispatch } from "react-redux";
