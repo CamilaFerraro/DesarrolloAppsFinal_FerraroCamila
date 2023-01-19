@@ -8,7 +8,7 @@ import PlaceDetailScreen from "../screens/PlaceDetailScreen";
 import PlaceListScreen from "../screens/PlaceListScreen";
 import NewPlaceScreen from "../screens/NewPlaceScreen";
 import MapScreen from "../screens/MapScreen";
-import { COLORS } from "../constants/Colores";
+import { COLORS } from "../constants";
 
 const PlaceStack = createNativeStackNavigator();
 
@@ -28,7 +28,7 @@ const PlaceNavigator = () => {
             fontWeight: "bold",
           },
         }}
-    >
+      >
         <PlaceStack.Screen
           name="Direcciones"
           component={PlaceListScreen}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {View,Text, StyleSheet, Button, TextInput, ScrollView} from "react-native";
+import {View, Text, StyleSheet, Button, TextInput, ScrollView} from "react-native";
 import { COLORS } from "../constants";
 import { addPlace } from "../store/places.actions";
 import { useDispatch } from "react-redux";
@@ -38,7 +38,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
           mapLocation={route?.params?.mapLocation}
         />
         <Button
-          title="Enviar mi ubicación"
+          title="Enviar mi direccion"
           color={COLORS.MAROON}
           onPress={handleSave}
         />
