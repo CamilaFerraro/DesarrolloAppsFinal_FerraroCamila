@@ -26,7 +26,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.label}>Escriba nombre de su ubicación</Text>
+        <Text style={styles.label}>Escriba el nombre de su ubicación</Text>
         <TextInput
           style={styles.input}
           value={title}
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 18,
-    marginBottom: -30,
-    marginTop: -30,
+    marginBottom: -10,
+    marginTop: -25,
   },
   input: {
     borderBottomColor: "#ccc",

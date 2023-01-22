@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     left: 20,
     right: 20,
     borderRadius: 15,
-    height: 90,
+    height: 60,
   },
   item: {
     flex: 1,
