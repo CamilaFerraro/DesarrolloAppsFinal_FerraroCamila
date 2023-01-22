@@ -4,7 +4,7 @@ import MapView, { Marker } from "react-native-maps";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const initialRegion = {
-  latittude: -58.48952735259595,
+  latitude: -58.48952735259595,
   longitude: -34.62255112718561,
 };
 
@@ -46,7 +46,7 @@ const MapScreen = ({ navigation }) => {
     >
       {selectedLocation && (
         <Marker
-          title="Ubicacion seleccionada"
+          title="Ubicación seleccionada"
           coordinate={{
             latitude: selectedLocation.lat,
             longitude: selectedLocation.lng,
