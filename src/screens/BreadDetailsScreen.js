@@ -2,6 +2,7 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem } from "../store/actions/cart.action";
+import { COLORS } from "../constants";
 
 const BreadDetailsScreen = () => {
   const bread = useSelector((state) => state.breads.selected);
@@ -21,7 +22,7 @@ const BreadDetailsScreen = () => {
         <Text style={styles.description}>{bread.description}</Text>
         <Text style={styles.price}>{bread.price}</Text>
         <View style={styles.button}>
-          <Button title="Agregar al carrito" onPress={handlerAddItemCart} />
+          <Button title="Agregar al carrito" color={COLORS.DARK_PURPLE} onPress={handlerAddItemCart} />
         </View>
       </View>
     </View>
@@ -41,13 +42,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 25,
+    fontSize: 40,
   },
   description: {
     fontSize: 20,
   },
   price: {
-    fontSize: 40,
+    fontSize: 35,
   },
   button: {
     marginTop: 15,

@@ -65,12 +65,12 @@ const LocationSelector = ({ onLocation, mapLocation }) => {
       <View style={styles.actions}>
         <Button
           title="Obtener Ubicación"
-          color={COLORS.PEACH_PUFF}
+          color={COLORS.LIGHT_PURPLE}
           onPress={handleGetLocation}
         />
         <Button
           title="Elegir del Mapa"
-          color={COLORS.LIGTH_PINK}
+          color={COLORS.LIGHT_PURPLE}
           onPress={handlePickOnMap}
         />
       </View>
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     justifyContent: "center",
     alignItems: "center",
-    borderColor: COLORS.BLUSH,
+    borderColor: COLORS.LIGHT_PURPLE,
     borderWidth: 1,
   },
   image: {

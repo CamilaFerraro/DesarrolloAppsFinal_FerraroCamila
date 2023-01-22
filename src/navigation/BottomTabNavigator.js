@@ -5,6 +5,7 @@ import ShopNavigator from "./ShopNavigator";
 import CartNavigator from "./CartNavigator";
 import OrderNavigator from "./OrderNavigator";
 import PlaceNavigator from "./PlaceNavigator";
+import { COLORS } from "../constants";
 
 const BottomTabs = createBottomTabNavigator();
 
@@ -72,7 +73,7 @@ export default BottomTabNavigator = () => {
 
 const styles = StyleSheet.create({
   tabBar: {
-    shadowColor: "#7f5df0",
+    shadowColor: COLORS.DARK_PURPLE,
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.5,
     shadowRadius: 0.5,

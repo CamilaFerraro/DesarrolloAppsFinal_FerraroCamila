@@ -39,7 +39,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
         />
         <Button
           title="Enviar mi direccion"
-          color={COLORS.MAROON}
+          color={COLORS.DARK_PURPLE}
           onPress={handleSave}
         />
       </View>

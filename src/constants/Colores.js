@@ -9,5 +9,6 @@ export default {
   BLUSH: "#da627d",
   LIGTH_PINK: "#ffa5ab",
   LIGHT_PURPLE: "#c77dff",
+  DARK_PURPLE: "#8338ec",
   PEACH_PUFF: "#f9dbbd",
 };
