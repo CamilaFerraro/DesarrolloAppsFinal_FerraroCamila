@@ -13,20 +13,20 @@ const NewPlaceScreen = ({ navigation, route }) => {
   const [location, setLocation] = useState();
 
   useEffect(() => {
-    console.log(route, "Nueva Direccion");
+    console.log(route, "Envío de pedido");
   }, [route]);
 
   const handleTitleChange = (text) => setTitle(text);
 
   const handleSave = () => {
     dispatch(addPlace(title, image, location));
-    navigation.navigate("Direcciones");
+    navigation.navigate("Mis direcciones");
   };
 
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.label}>Envío de pedido</Text>
+        <Text style={styles.label}>Escriba nombre de su ubicación</Text>
         <TextInput
           style={styles.input}
           value={title}
@@ -54,13 +54,13 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 18,
-    marginBottom: -10,
-    marginTop: 30,
+    marginBottom: -30,
+    marginTop: -30,
   },
   input: {
     borderBottomColor: "#ccc",
     borderBottomWidth: 1,
-    marginBottom: 16,
+    marginBottom: 0,
     paddingHorizontal: 2,
     paddingVertical: 4,
   },

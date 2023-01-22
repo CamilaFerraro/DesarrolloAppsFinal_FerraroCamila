@@ -14,13 +14,13 @@ const PlaceStack = createNativeStackNavigator();
 
 const PlaceNavigator = () => {
   return (
-    <NavigationContainer>
+    //<NavigationContainer>
       <PlaceStack.Navigator
-        initialRouteName="Direcciones"
+        initialRouteName="Mis direcciones"
         screenOptions={{
           headerStyle: {
             backgroundColor:
-              Platform.OS === "android" ? COLORS.DARK_SIENNA : "",
+              Platform.OS === "android" ? COLORS.LIGHT_PURPLE : "",
           },
           headerTintColor:
             Platform.OS === "android" ? "white" : COLORS.DARK_SIENNA,
@@ -30,10 +30,10 @@ const PlaceNavigator = () => {
         }}
       >
         <PlaceStack.Screen
-          name="Direcciones"
+          name="Mis direcciones"
           component={PlaceListScreen}
           options={({ navigation }) => ({
-            title: "Direcciones",
+            title: "Mis direcciones",
             headerRight: () => (
               <TouchableOpacity onPress={() => navigation.navigate("Nuevo")}>
                 <Ionicons
@@ -50,12 +50,12 @@ const PlaceNavigator = () => {
         <PlaceStack.Screen
           name="Detalle"
           component={PlaceDetailScreen}
-          options={{ title: "Detalle direccion" }}
+          options={{ title: "Detalle dirección" }}
         />
         <PlaceStack.Screen
           name="Nuevo"
           component={NewPlaceScreen}
-          options={{ title: "Nueva direccion" }}
+          options={{ title: "Nueva dirección" }}
         />
         <PlaceStack.Screen
           name="Map"
@@ -63,7 +63,7 @@ const PlaceNavigator = () => {
           options={{ title: "Mapa" }}
         />
       </PlaceStack.Navigator>
-    </NavigationContainer>
+    //</NavigationContainer>
   );
 };
 

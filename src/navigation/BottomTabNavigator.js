@@ -4,7 +4,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import ShopNavigator from "./ShopNavigator";
 import CartNavigator from "./CartNavigator";
 import OrderNavigator from "./OrderNavigator";
-import NewPlaceScreen from "../screens/NewPlaceScreen"
+import PlaceNavigator from "./PlaceNavigator";
 
 const BottomTabs = createBottomTabNavigator();
 
@@ -56,7 +56,7 @@ export default BottomTabNavigator = () => {
       />
         <BottomTabs.Screen
         name="LocationTab"
-        component={NewPlaceScreen}
+        component={PlaceNavigator}
         options={{
           tabBarIcon: ({ focus }) => (
             <View style={styles.item}>
