@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import {FlatList, StyleSheet, Text, TouchableOpacity, View,} from "react-native";
 import CartItem from "../components/CartItem";
 import { useSelector, useDispatch } from "react-redux";
 import { removeItem, confirmCart } from "../store/actions/cart.action";
