@@ -21,9 +21,6 @@ const PlaceDetailScreen = ({ route }) => {
       </View>
       <Image source={{ uri: place.image }} style={styles.image} />
       <View style={styles.location}>
-        <View style={styles.addressContainer}>
-          <Text>{"Mapa"}</Text>
-        </View>
         <MapPreview
           style={styles.map}
           location={{ lat: place.lat, lng: place.lng }}
@@ -42,8 +39,8 @@ const styles = StyleSheet.create({
   },
   image: {
     height: "35%",
-    minHeight: 300,
-    width: "100%",
+    minHeight: 200,
+    width: "90%",
     padding: 20,
   },
   location: {
@@ -55,18 +52,16 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 8,
-    elevation: 5,
+    elevation: 8,
     borderRadius: 10,
-  },
-  addressContainer: {
-    padding: 20,
   },
   address: {
     color: COLORS.MAROON,
     textAlign: "center",
+    height: 20,
   },
   map: {
-    height: 300,
+    height: 250,
   },
   textContainer: {
     padding: 20,
