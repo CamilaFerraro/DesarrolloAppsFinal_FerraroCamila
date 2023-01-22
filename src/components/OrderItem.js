@@ -7,7 +7,7 @@ const formatDay = (time) => {
 };
 
 const sumTotal = (list) =>
-  list.map((item) => item.quantity * item.price).reduce((a, b) => a + b, 0);
+  list?.map?.((item) => item.quantity * item.price).reduce((a, b) => a + b, 0);
 
 const OrderItem = ({ item, onDelete }) => {
   return (
