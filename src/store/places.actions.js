@@ -1,6 +1,6 @@
 import * as FileSystem from "expo-file-system";
 import Map from "../constants/Map";
-import { insertAddress, fetchAddress } from "../data/index";
+import { insertAddress, fetchAddress } from "../data";
 
 export const ADD_PLACE = "ADD_PLACE";
 export const LOAD_PLACES = "LOAD_PLACES";

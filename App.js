@@ -6,7 +6,7 @@ import { init } from "./src/data";
 init()
   .then(() => console.log("Database initialized"))
   .catch((err) => {
-    console.log("Data base fail connect");
+    console.log("Database failed to connect");
     console.log(err.message);
   });
 
